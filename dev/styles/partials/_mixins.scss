@@ -1,0 +1,5 @@
+@mixin headerText ($fontSize, $fontColor, $fontWeight) {
+	font-family: $headerFont;
+	font-size: $fontSize;
+	color: $fontColor;
+}

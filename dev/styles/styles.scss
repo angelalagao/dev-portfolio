@@ -1,4 +1,84 @@
-h1 {
-	color: red;
-	text-decoration: underline;
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/about';
+@import 'partials/skills';
+
+// * {
+// 	border: 1px solid red;
+// }
+
+html {
+	font-size: 62.5%;
 }
+
+body {
+	font-size: 1.4rem;
+	font-family: $baseFont;
+}
+
+.outer-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1440px;
+}
+
+h1 {
+	@include headerText(6rem, $whiteColor, 900);
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+h2 {
+	@include headerText(3rem, $blackColor, 700);
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+}
+
+h3 {
+	font-family: $headerFont;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	margin-top: 20px;
+	width: 97%;
+}
+
+section {
+	background: $sectionColor;
+	margin: 20px 0;
+	border-radius: 2px;
+}
+
+.wrapper {
+	width: 93%;
+	padding-top: 100px;
+	padding-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-title {
+	width: 30%;
+	padding-left: 125px;
+}
+
+.work-container {
+	width: 70%;
+	padding-right: 130px;
+	padding-left: 80px;
+}
+
+

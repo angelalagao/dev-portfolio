@@ -1,0 +1,24 @@
+.skills {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 130px;
+	padding-left: 80px;
+}
+
+svg {
+	width: 45px;
+	height: 45px;
+	fill: $shadowColor;
+	transition: all 0.5s;
+	&:hover {
+		transform: translateY(10px);
+	}
+}
+
+.skill__item {
+	margin: auto;
+	margin: 15px;
+	text-align: center;
+}

@@ -10,6 +10,13 @@ const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
 const historyApiFallback = require('connect-history-api-fallback');
+const injectSvg = require('gulp-inject-svg');
+
+gulp.task('html', () => {
+	return gulp.src('dev/index.html')
+    .pipe(injectSvg())
+    .pipe(gulp.dest('.'));
+})
 
 gulp.task('styles', () => {
 	return gulp.src('./dev/styles/**/*.scss')
@@ -44,7 +51,8 @@ gulp.task('bs', () => {
 	});
 });
 
-gulp.task('default', ['js','bs', 'styles'], () => {
+gulp.task('default', ['js','bs', 'styles', 'html'], () => {
+	gulp.watch('dev/index.html', ['html', reload]);
 	gulp.watch('dev/**/*.js',['js']);
 	gulp.watch('dev/**/*.scss',['styles']);
 	gulp.watch('./public/styles/style.css',reload);
