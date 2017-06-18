@@ -1,16 +1,23 @@
+.skills-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
 .skills {
-	width: 70%;
+	width: 60%;
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-right: 130px;
-	padding-left: 80px;
 }
 
 svg {
 	width: 45px;
 	height: 45px;
-	fill: $shadowColor;
 	transition: all 0.5s;
 	&:hover {
 		transform: translateY(10px);
@@ -19,6 +26,38 @@ svg {
 
 .skill__item {
 	margin: auto;
-	margin: 15px;
 	text-align: center;
+	color: $greenColor;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.skills {
+		width: 70%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.skills {
+		width: 80%;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.skills {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.skill__group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.skill__item {
+		margin: 5px 10px;
+	}
+
 }

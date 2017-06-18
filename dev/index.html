@@ -13,48 +13,209 @@
 	<div class="outer-wrapper">
 		<main>
 		<header>
-			<nav class="nav-wrapper">
-				<div class="nav-logo">
-					<a href="#">Logo</a>
-				</div>
-				<div class="nav-links-wrap">
-					<ul class="nav-links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul> <!-- end nav-links ul -->
-					<div class="nav-burger">
-						<button>&#9776;</button>
+			<div class="header-container">
+				<nav class="nav-wrapper">
+					<div class="nav-logo">
+						<a href="#">Logo</a>
 					</div>
-				</div> <!-- end nav-links-wrap -->
-			</nav> <!-- end nav -->
-			<div class="header-content">
-				<p class="intro">Hi, My Name is</p> 
-				<h1><span class="name">Angel Alagao</span></h1>
-				<p>I am a <span class="titles">Front-end Web Developer</span></p> 
+					<div class="nav-links-wrap">
+						<ul class="nav-links">
+							<li><a href="#">Home</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="index.html#work">Work</a></li>
+							<li><a href="index.html#skills">Skills</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+						</ul> <!-- end nav-links ul -->
+						<div class="nav-burger">
+							<button id="burger">☰</button>
+						</div>
+					</div> <!-- end nav-links-wrap -->
+				</nav> <!-- end nav -->
+				<div class="header-content">
+					<h1>Angel <span class="last-name">Alagao</span></h1>
+					<p><span class="titles">Web Developer</span></p> 
+				</div>
+				<div class="scroll">
+					<button class="scroll__button">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</button>
+				</div>
 			</div>
 		</header>
-		<section class="about-section">
+		<section class="about-section" id="about">
 			<div class="wrapper">
-				<div class="section-title">
-					<h2>About Me</h2>
-				</div>
 				<div class="about-content">
+					<h2>About Me</h2>
 					<p>Hi, my name is Angel, a small town girl with a Biochemistry degree turned front end developer based in Toronto. I love taking on new challenges with a positive approach and collaborating with my peers, and utilizing my creativity and problem solving skills. I’m excited to work on enhancing my Javascript knowledge and building more React applications. When I’m not coding, you can find me experimenting with leftover ingredients in the kitchen and coming up with bomb recipes.</p>
-					<img src="assets/about-me-light2.jpg" alt="">
+				</div>
+				<div class="about-info">
+					<img src="assets/about-me-cropped1.jpg" alt="">
 				</div>
 			</div>
 		</section>
-		<section class="skills-section">
-			<div class="wrapper">
+		<section class="work-section" id="work">
+			<div class="work-wrapper">
+				<div class="work-container">
+					<div class="work">
+						<div class="work__image">
+							<img src="assets/happiness-jar-macbook.png" alt="">
+						</div>
+						<div class="work__details">
+							<h4>Happiness Jar <i class="fa fa-unlock-alt" aria-hidden="true"></i></h4>
+							<h3>React &amp; Firebase Application</h3>
+							<div class="keyline"></div>
+							<p>User authenticated application using React, React-Router and Firebase for storing your personal happy notes. View your happiness jar anytime you're feeling down!</p>
+							<ul class="work__tools">
+								<li>React</span></li>
+								<li>Firebase</li>
+								<li>Javascript</li>
+								<li>ES6</li>
+								<li>Sass</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+							</ul>
+							<div class="work__view">
+								<a href="https://happiness-jar-d0fe4.firebaseapp.com/" target="_blank">
+										View Live
+								</a>
+								<a href="https://github.com/angelalagao/happiness-jar" target="_blank">
+										View on Github
+								</a>
+							</div>
+						</div> <!-- end work__details -->
+					</div> <!-- end work -->
+					<div class="work">
+						<div class="work__image">
+							<img src="assets/cravings-for-savings-1.png" alt="">
+						</div>
+						<div class="work__details">
+							<h4>Cravings for Savings <i class="fa fa-money" aria-hidden="true"></i></h4>
+							<h3>API Web Application</h3>
+							<div class="keyline"></div>
+							<p>User interactive web application to save those leftover ingredients in your kitchen! This app uses the Yummly Api to help you come up with Recipe ideas.</p>
+							<ul class="work__tools">
+								<li>APIs</li>
+								<li>Javascript</li>
+								<li>ES6</li>
+								<li>JQuery</li>
+								<li>Sass</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+							</ul>
+							<div class="work__view" target="_blank">
+								<a href="#">
+									View Live
+								</a>
+								<a href="#" target="_blank">
+									View on Github
+								</a>
+							</div>
+						</div> <!-- end work__details -->
+					</div> <!-- end work -->
+					<div class="work">
+						<div class="work__image">
+							<img src="assets/madlib.png" alt="">
+						</div>
+						<div class="work__details">
+							<h4>Madlib Adventures <i class="fa fa-gamepad" aria-hidden="true"></i></h4>
+							<h3>Javascript Game Application</h3>
+							<div class="keyline"></div>
+							<p>
+								A Choose-Your-Own-Adventure game with a madlib spin! Pair programmed with
+								<a href="#" target="_blank">Sonny Zhang</a>.
+							</p>
+							<ul class="work__tools">
+								<li>Javascript</li>
+								<li>JQuery</li>
+								<li>CSS3</li>
+								<li>Sass</li>
+								<li>HTML5</li>
+								<li>Collaborative</li>
+								<li>Pair Programming</li>
+							</ul>
+							<div class="work__view">
+								<a href="#" target="_blank">
+									View Live
+								</a>
+								<a href="#" target="_blank">
+									View on Github
+								</a>
+							</div>
+						</div> <!-- end work__details -->
+					</div> <!-- end work -->
+					<div class="work">
+						<div class="work__image">
+							<img src="assets/city-bikes.png" alt="">
+						</div>
+						<div class="work__details">
+							<h4>CityBikes Toronto <i class="fa fa-bicycle" aria-hidden="true"></i></h4>
+							<h3>Client API Application</h3>
+							<div class="keyline"></div>
+							<p>
+								Using CityBikes and Google Maps API, Find the nearest BikeShare stations at your departure point and desired destination! It even calculates the price of your trip for you. Project built in conjuction with
+								<a href="#" target="_blank">Amy Tschupruk</a> and
+								<a href="#" target="_blank">Matthew Crossland</a>.
+							</p>
+							<ul class="work__tools">
+								<li>APIs</li>
+								<li>Javascript</li>
+								<li>ES6</li>
+								<li>JQuery</li>
+								<li>Git Workflow</li>
+								<li>Gulp</li>
+								<li>Sass</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+								<li>Collaborative</li>
+							</ul>
+							<div class="work__view">
+								<a href="#">
+									View Live
+								</a>
+								<a href="#">
+									View on Github
+								</a>
+							</div>
+						</div> <!-- end work__details -->
+					</div> <!-- end work -->
+					<div class="work">
+						<div class="work__image">
+							<img src="assets/definity.png" alt="">
+						</div>
+						<div class="work__details">
+							<h4>Definity <i class="fa fa-eye" aria-hidden="true"></i></h4>
+							<h3>PSD Conversion</h3>
+							<div class="keyline"></div>
+							<p>Created a pixel perfect translation of a PSD design into a fully responsive site.</p>
+							<ul class="work__tools">
+								<li>Responsive Design</li>
+								<li>Sass</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+								<li>Javascript</li>
+								<li>JQuery</li>
+							</ul>
+							<div class="work__view">
+								<a href="#" target="_blank">
+									View Live
+								</a>
+								<a href="#" target="_blank">
+									View on Github
+								</a>
+							</div>
+						</div> <!-- end work__details -->
+					</div> <!-- end work -->
+				</div> <!-- end work-container -->
+			</div> <!-- end wrapper -->
+		</section> <!-- end work-section -->
+		<section class="skills-section" id="skills">
+			<div class="skills-wrapper">
 				<div class="section-title">
-					<h2>Skills</h2>
+					<h2>Skills &amp; Tools</h2>
 				</div>
 				<ul class="skills">
-					<li class="skill__group">
-						<ul>
+					<li>
+						<ul class="skill__group">
 							<li class="skill__item">
 								<img src="assets/html5-plain.svg" alt="icon for HTML5">
 								<p>HTML5</p>
@@ -69,8 +230,8 @@
 							</li>
 						</ul>
 					</li>
-					<li class="skill__group">
-						<ul>
+					<li>
+						<ul class="skill__group">
 							<li class="skill__item">
 								<img src="assets/javascript-original.svg" alt="icon for Javascript">
 								<p>Javascript</p>
@@ -85,8 +246,8 @@
 							</li>
 						</ul>
 					</li>
-					<li class="skill__group">
-						<ul>
+					<li>
+						<ul class="skill__group">
 							<li class="skill__item">
 								<img src="assets/react-original.svg" alt="icon for React">
 								<p>React</p>
@@ -101,8 +262,8 @@
 							</li>
 						</ul>
 					</li>
-					<li class="skill__group">
-						<ul>
+					<li>
+						<ul class="skill__group">
 							<li class="skill__item">
 								<img src="assets/github-original.svg" alt="icon for Github">
 								<p>GitHub</p>
@@ -117,8 +278,8 @@
 							</li>
 						</ul>
 					</li>
-					<li class="skill__group">
-						<ul>
+					<li>
+						<ul class="skill__group">
 							<li class="skill__item">
 								<img src="assets/sublimeIcon.svg" alt="icon for Sublime Text">
 								<p>Sublime</p>
@@ -136,162 +297,45 @@
 
 
 				</ul> <!-- end skills -->
-			</div> <!-- end wrapper -->
+			</div> <!-- end skills-wrapper -->
 		</section>
-		<section class="work-section">
+		
+		<section class="contact-section" id="contact">
 			<div class="wrapper">
 				<div class="section-title">
-					<h2>My Work</h2>
-				</div>
-				<div class="work-container">
-					<div class="work">
-						<div class="work__image"></div> <!-- insert as bground image -->
-						<div class="work__details">
-							<h3>Happiness Jar</h3>
-							<div class="keyline"></div>
-							<p>A user authenticated React application for storing your personal happy notes. View your happiness jar anytime you're feeling down!</p>
-							<ul class="work__tools">
-								<li>React</li>
-								<li>Firebase</li>
-								<li>Javascript</li>
-								<li>ES6</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-							</ul>
-							<div class="work__view">
-								<a href="https://happiness-jar-d0fe4.firebaseapp.com/">
-									<button>View Live</button>
-								</a>
-								<a href="https://github.com/angelalagao/happiness-jar">
-									<button>View on Github</button>
-								</a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image"></div> <!-- insert as bground image -->
-						<div class="work__details">
-							<h3>Cravings for Savings</h3>
-							<div class="keyline"></div>
-							<p>Save those leftover ingredients in your kitchen! This app uses the Yummly Api to help you come up with Recipe ideas.</p>
-							<ul class="work__tools">
-								<li>APIs</li>
-								<li>Javascript</li>
-								<li>ES6</li>
-								<li>JQuery</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-							</ul>
-							<div class="work__view">
-								<a href="#"><button>View Live</button></a>
-								<a href="#"><button>View on Github</button></a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image"></div> <!-- insert as bground image -->
-						<div class="work__details">
-							<h3>CityBikes</h3>
-							<div class="keyline"></div>
-							<p>You don't always have to own a bike to go biking. Find the nearest BikeShare stations at your departure point and desired destination! Using CityBikes and Google Maps API this app will tell you just that. It even calculates the price of your trip for you. Project built in conjuction with <a href="#">Amy Tschupruk</a> and <a href="#">Matthew Crossland</a></p>
-							<ul class="work__tools">
-								<li>APIs</li>
-								<li>Javascript</li>
-								<li>ES6</li>
-								<li>JQuery</li>
-								<li>Git Workflow</li>
-								<li>Gulp</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-							</ul>
-							<div class="work__view">
-								<a href="#"><button>View Live</button></a>
-								<a href="#"><button>View on Github</button></a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image"></div> <!-- insert as bground image -->
-						<div class="work__details">
-							<h3>Madlib Adventures</h3>
-							<div class="keyline"></div>
-							<p>A Choose-Your-Own-Adventure game with a madlib spin! Pair programmed with <a href="#">Sonny Zhang</a>.</p>
-							<ul class="work__tools">
-								<li>Javascript</li>
-								<li>JQuery</li>
-								<li>CSS3</li>
-								<li>Sass</li>
-								<li>HTML5</li>
-								<li>Pair Programming</li>
-							</ul>
-							<div class="work__view">
-								<a href="#"><button>View Live</button></a>
-								<a href="#"><button>View on Github</button></a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image"></div> <!-- insert as bground image -->
-						<div class="work__details">
-							<h3>Definity PSD Conversion</h3>
-							<div class="keyline"></div>
-							<p>Created a pixel perfect translation of a PSD design into a fully responsive site.</p>
-							<ul class="work__tools">
-								<li>Responsive Design</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-								<li>Javascript</li>
-								<li>JQuery</li>
-							</ul>
-							<div class="work__view">
-								<a href="#"><button>View Live</button></a>
-								<a href="#"><button>View on Github</button></a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-				</div> <!-- end work-container -->
-			</div> <!-- end wrapper -->
-		</section> <!-- end work-section -->
-		<section class="contact-section">
-			<div class="wrapper">
-				<div class="section-title">
-					<h2>Get in Touch</h2>
+					<h2>Contact</h2>
 				</div>
 				<div class="contact-container">
 					<ul class="contact__info">
 						<li>
 							<a href="mailto:hello@angelalagao.com">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
+								hello@angelalagao.com
 							</a>
-							<a href="mailto:hello@angelalagao.com">hello@angelalagao.com</a>
 						</li>
 						<li>
 							<a href="https://twitter.com/angelalagao">
 								<i class="fa fa-twitter" aria-hidden="true"></i>
+								Twitter
 							</a>
-							<a href="https://twitter.com/angelalagao">I tweet sometimes</a>
 						</li>
 						<li>
 							<a href="https://medium.com/@angelalagao">
 								<i class="fa fa-medium" aria-hidden="true"></i>
+								Medium
 							</a>
-							<a href="https://medium.com/@angelalagao">I blog sometimes</a>
 						</li>
 						<li>
 							<a href="https://github.com/angelalagao">
 								<i class="fa fa-github" aria-hidden="true"></i>
+								Github
 							</a>
-							<a href="https://github.com/angelalagao">I share my code sometimes</a>
 						</li>
 						<li>
 							<a href="https://www.linkedin.com/in/angel-alagao-7786a4a4/">
 								<i class="fa fa-linkedin" aria-hidden="true"></i>
+								 <span class="contact__text">LinkedIn</span>
 							</a>
-							<a href="https://www.linkedin.com/in/angel-alagao-7786a4a4/">Connect with me</a>
 						</li>
 					</ul>
 					<form action="" class="contact__form">

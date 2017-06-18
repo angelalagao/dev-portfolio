@@ -4,6 +4,8 @@
 @import 'partials/header';
 @import 'partials/about';
 @import 'partials/skills';
+@import 'partials/work';
+@import 'partials/contact';
 
 // * {
 // 	border: 1px solid red;
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	font-family: $baseFont;
 }
 
@@ -26,19 +28,29 @@ body {
 }
 
 h1 {
-	@include headerText(6rem, $whiteColor, 900);
-	letter-spacing: 3px;
+	@include headerText(9rem, $whiteColor, 700);
 	margin: 0;
+	line-height: 2px;
 }
 
 h2 {
 	@include headerText(3rem, $blackColor, 700);
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	letter-spacing: 1.6px;
 }
 
 h3 {
-	font-family: $headerFont;
+	@include headerText(2rem, $blackColor, 700);
+	line-height: 28px;
+	margin: 15px 0;
+}
+
+h4 {
+	font-family: $secondaryFont;
+	font-size: 1.6rem;
+	color: $greenColor;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 ul {
@@ -64,7 +76,7 @@ section {
 
 .wrapper {
 	width: 93%;
-	padding-top: 100px;
+	padding-top: 60px;
 	padding-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
@@ -72,13 +84,37 @@ section {
 
 .section-title {
 	width: 30%;
-	padding-left: 125px;
-}
-
-.work-container {
-	width: 70%;
-	padding-right: 130px;
-	padding-left: 80px;
+	text-align: center;
 }
 
 
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.wrapper {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	h1 {
+		font-size: calc(6.2rem + (9 - 6.2) * ((100vw - 481px) / (768 - 481)));
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	h1 {
+		font-size: calc(6rem + (6.6 - 6) * ((100vw - 300px) / (480 - 300)));
+		line-height: 55px;
+	}
+	body {
+		font-size: 1.4rem;
+	}
+	h2 {
+		letter-spacing: 0.6px;
+	}
+}

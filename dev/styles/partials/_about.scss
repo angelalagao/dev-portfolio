@@ -1,11 +1,47 @@
+.about-section {
+	padding: 50px 0;
+}
+
 .about-content {
 	width: 70%;
 	line-height: 26px;
-	padding-right: 130px;
-	padding-left: 80px;
+	padding-left: 95px;
+}
+
+.about-info {
+	width: 370px;
+	text-align: center;
 	img {
-		height: 330px;
-		max-width: 800px;
+		max-width: 100%;
+		height: 270px;
+		border: 10px solid $whiteColor;
 		border-radius: 2px;
 	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.about-content {
+		width: 100%;
+		padding: 0 75px;
+	}
+
+	.about-info {
+		margin-top: 25px;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.about-content {
+		width: 85%;
+		padding: 0;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
 }
