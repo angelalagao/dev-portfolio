@@ -16,8 +16,13 @@ header {
 	color: $greyColor;
 	a {
 		color: $greyColor;
+		transition: all 0.5s;
 		&:visited {
 			color: $greyColor;
+		}
+		&:hover {
+			color: $shadowColor;
+			border-bottom: 1px solid $greenColor;
 		}
 	}
 }

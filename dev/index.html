@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Angel Alagao</title>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:700,900|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -14,349 +13,356 @@
 	<!-- all around white border -->
 	<div class="outer-wrapper">
 		<main>
-		<header>
-			<div class="header-container">
-				<nav class="nav-wrapper">
-					<div class="nav-logo">
-						<a href="#">
-							<img src="assets/aalagao_logo.png" alt="">
-						</a>
+			<header> <!-- background gradient -->
+				<div class="header-container">
+					<nav class="nav-wrapper">
+						<div class="nav-logo">
+							<a href="#">
+								<img src="assets/aalagao_logo.png" alt="">
+							</a>
+						</div>
+						<div class="nav-links-wrap">
+							<ul class="nav-links">
+								<li><a href="#">Home</a></li>
+								<li><a href="index.html#about">About</a></li>
+								<li><a href="index.html#work">Work</a></li>
+								<li><a href="index.html#skills">Skills</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+							</ul> <!-- end nav-links ul -->
+							<div class="nav-burger">
+								<button id="burger">☰</button>
+							</div>
+						</div> <!-- end nav-links-wrap -->
+					</nav> <!-- end nav-wrapper -->
+					<div class="header-content">
+						<h1>Angel <span class="last-name">Alagao</span></h1>
+						<p><span class="titles">Web Developer</span></p> 
 					</div>
-					<div class="nav-links-wrap">
-						<ul class="nav-links">
-							<li><a href="#">Home</a></li>
-							<li><a href="index.html#about">About</a></li>
-							<li><a href="index.html#work">Work</a></li>
-							<li><a href="index.html#skills">Skills</a></li>
-							<li><a href="index.html#contact">Contact</a></li>
-						</ul> <!-- end nav-links ul -->
-						<div class="nav-burger">
-							<button id="burger">☰</button>
-						</div>
-					</div> <!-- end nav-links-wrap -->
-				</nav> <!-- end nav -->
-				<div class="header-content">
-					<h1>Angel <span class="last-name">Alagao</span></h1>
-					<p><span class="titles">Web Developer</span></p> 
+					<div class="scroll">
+						<button class="scroll__button">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div> <!-- end header-container -->
+			</header>
+			<section class="about-section" id="about">
+				<div class="wrapper">
+					<div class="about-content">
+						<h2>About Me</h2>
+						<p>Hi, my name is Angel, a small town girl with a Biochemistry degree turned front end developer based in Toronto. I love taking on new challenges with a positive approach and collaborating with my peers, and utilizing my creativity and problem solving skills. I’m excited to work on enhancing my Javascript knowledge and building more React applications. When I’m not coding, you can find me experimenting with leftover ingredients in the kitchen and coming up with bomb recipes.</p>
+					</div>
+					<div class="about-info">
+						<img src="assets/about-me-cropped1.jpg"
+							 alt="photo of Angel Alagao, front end web developer">
+					</div>
 				</div>
-				<div class="scroll">
-					<button class="scroll__button">
-						<i class="fa fa-angle-down" aria-hidden="true"></i>
-					</button>
-				</div>
-			</div>
-		</header>
-		<section class="about-section" id="about">
-			<div class="wrapper">
-				<div class="about-content">
-					<h2>About Me</h2>
-					<p>Hi, my name is Angel, a small town girl with a Biochemistry degree turned front end developer based in Toronto. I love taking on new challenges with a positive approach and collaborating with my peers, and utilizing my creativity and problem solving skills. I’m excited to work on enhancing my Javascript knowledge and building more React applications. When I’m not coding, you can find me experimenting with leftover ingredients in the kitchen and coming up with bomb recipes.</p>
-				</div>
-				<div class="about-info">
-					<img src="assets/about-me-cropped1.jpg" alt="">
-				</div>
-			</div>
-		</section>
-		<section class="work-section" id="work">
-			<div class="work-wrapper">
-				<div class="work-container">
-					<div class="work">
-						<div class="work__image">
-							<img src="assets/happiness-jar-macbook.png" alt="">
-						</div>
-						<div class="work__details">
-							<h4>Happiness Jar <i class="fa fa-unlock-alt" aria-hidden="true"></i></h4>
-							<h3>React &amp; Firebase Application</h3>
-							<div class="keyline"></div>
-							<p>User authenticated application using React, React-Router and Firebase for storing your personal happy notes. View your happiness jar anytime you're feeling down!</p>
-							<ul class="work__tools">
-								<li>React</span></li>
-								<li>Firebase</li>
-								<li>Javascript</li>
-								<li>ES6</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-							</ul>
-							<div class="work__view">
-								<a href="https://happiness-jar-d0fe4.firebaseapp.com/" target="_blank">
+			</section> <!-- end about-section -->
+			<section class="work-section" id="work">
+				<div class="work-wrapper">
+					<div class="work-container">
+						<div class="work">
+							<div class="work__image">
+								<img src="assets/happiness-jar-macbook.png"
+									 alt="place preview of Happiness Jar Application on a Macbook">
+							</div>
+							<div class="work__details">
+								<h4>Happiness Jar <i class="fa fa-unlock-alt" aria-hidden="true"></i></h4>
+								<h3>React &amp; Firebase Application</h3>
+								<div class="keyline"></div>
+								<p>User authenticated application using React, React-Router and Firebase for storing your personal happy notes. View your happiness jar anytime you're feeling down!</p>
+								<ul class="work__tools">
+									<li>React</span></li>
+									<li>Firebase</li>
+									<li>Javascript</li>
+									<li>ES6</li>
+									<li>Sass</li>
+									<li>CSS3</li>
+									<li>HTML5</li>
+								</ul>
+								<div class="work__view">
+									<a href="https://happiness-jar-d0fe4.firebaseapp.com/" target="_blank">
+											View Live
+									</a>
+									<a href="https://github.com/angelalagao/happiness-jar" target="_blank">
+											View on Github
+									</a>
+								</div>
+							</div> <!-- end work__details -->
+						</div> <!-- end work -->
+						<div class="work">
+							<div class="work__image">
+								<img src="assets/cravings-for-savings-1.png" 
+									 alt="place preview of Cravings for Savings Application on a Macbook">
+							</div>
+							<div class="work__details">
+								<h4>Cravings for Savings <i class="fa fa-money" aria-hidden="true"></i></h4>
+								<h3>API Web Application</h3>
+								<div class="keyline"></div>
+								<p>User interactive web application to save those leftover ingredients in your kitchen! This app uses the Yummly Api to help you come up with Recipe ideas.</p>
+								<ul class="work__tools">
+									<li>APIs</li>
+									<li>Javascript</li>
+									<li>ES6</li>
+									<li>JQuery</li>
+									<li>Sass</li>
+									<li>CSS3</li>
+									<li>HTML5</li>
+								</ul>
+								<div class="work__view" target="_blank">
+									<a href="#">
 										View Live
-								</a>
-								<a href="https://github.com/angelalagao/happiness-jar" target="_blank">
+									</a>
+									<a href="#" target="_blank">
 										View on Github
-								</a>
+									</a>
+								</div>
+							</div> <!-- end work__details -->
+						</div> <!-- end work -->
+						<div class="work">
+							<div class="work__image">
+								<img src="assets/madlib.png"
+									 alt="place preview of Madlib Adventure Game on a Macbook">
 							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image">
-							<img src="assets/cravings-for-savings-1.png" alt="">
-						</div>
-						<div class="work__details">
-							<h4>Cravings for Savings <i class="fa fa-money" aria-hidden="true"></i></h4>
-							<h3>API Web Application</h3>
-							<div class="keyline"></div>
-							<p>User interactive web application to save those leftover ingredients in your kitchen! This app uses the Yummly Api to help you come up with Recipe ideas.</p>
-							<ul class="work__tools">
-								<li>APIs</li>
-								<li>Javascript</li>
-								<li>ES6</li>
-								<li>JQuery</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
+							<div class="work__details">
+								<h4>Madlib Adventures <i class="fa fa-gamepad" aria-hidden="true"></i></h4>
+								<h3>Javascript Game Application</h3>
+								<div class="keyline"></div>
+								<p>
+									A Choose-Your-Own-Adventure game with a madlib spin! Pair programmed with
+									<a href="#" target="_blank">Sonny Zhang</a>.
+								</p>
+								<ul class="work__tools">
+									<li>Javascript</li>
+									<li>JQuery</li>
+									<li>CSS3</li>
+									<li>Sass</li>
+									<li>HTML5</li>
+									<li>Collaborative</li>
+									<li>Pair Programming</li>
+								</ul>
+								<div class="work__view">
+									<a href="#" target="_blank">
+										View Live
+									</a>
+									<a href="#" target="_blank">
+										View on Github
+									</a>
+								</div>
+							</div> <!-- end work__details -->
+						</div> <!-- end work -->
+						<div class="work">
+							<div class="work__image">
+								<img src="assets/city-bikes.png"
+									 alt="place preview of Citybikes Toronto Application on a Macbook">
+							</div>
+							<div class="work__details">
+								<h4>CityBikes Toronto <i class="fa fa-bicycle" aria-hidden="true"></i></h4>
+								<h3>Client API Application</h3>
+								<div class="keyline"></div>
+								<p>
+									Using CityBikes and Google Maps API, Find the nearest BikeShare stations at your departure point and desired destination! It even calculates the price of your trip for you. Project built in conjuction with
+									<a href="#" target="_blank">Amy Tschupruk</a> and
+									<a href="#" target="_blank">Matthew Crossland</a>.
+								</p>
+								<ul class="work__tools">
+									<li>APIs</li>
+									<li>Javascript</li>
+									<li>ES6</li>
+									<li>JQuery</li>
+									<li>Git Workflow</li>
+									<li>Gulp</li>
+									<li>Sass</li>
+									<li>CSS3</li>
+									<li>HTML5</li>
+									<li>Collaborative</li>
+								</ul>
+								<div class="work__view">
+									<a href="#">
+										View Live
+									</a>
+									<a href="#">
+										View on Github
+									</a>
+								</div>
+							</div> <!-- end work__details -->
+						</div> <!-- end work -->
+						<div class="work">
+							<div class="work__image">
+								<img src="assets/definity.png"
+									 alt="place preview of Definity design PSD Conversion on a Macbook and iPhone">
+							</div>
+							<div class="work__details">
+								<h4>Definity <i class="fa fa-eye" aria-hidden="true"></i></h4>
+								<h3>PSD Conversion</h3>
+								<div class="keyline"></div>
+								<p>Created a pixel perfect translation of a PSD design into a fully responsive site.</p>
+								<ul class="work__tools">
+									<li>Responsive Design</li>
+									<li>Sass</li>
+									<li>CSS3</li>
+									<li>HTML5</li>
+									<li>Javascript</li>
+									<li>JQuery</li>
+								</ul>
+								<div class="work__view">
+									<a href="#" target="_blank">
+										View Live
+									</a>
+									<a href="#" target="_blank">
+										View on Github
+									</a>
+								</div>
+							</div> <!-- end work__details -->
+						</div> <!-- end work -->
+					</div> <!-- end work-container -->
+				</div> <!-- end work-wrapper -->
+			</section> <!-- end work-section -->
+			<section class="skills-section" id="skills">
+				<div class="skills-wrapper">
+					<div class="section-title">
+						<h2>Skills &amp; Tools</h2>
+					</div>
+					<ul class="skills">
+						<li>
+							<ul class="skill__group">
+								<li class="skill__item">
+									<img src="assets/html5-plain.svg" alt="icon for HTML5">
+									<p>HTML5</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/css3-plain.svg" alt="icon for CSS3">
+									<p>CSS3</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/sass-original.svg" alt="icon for Sass">
+									<p>Sass</p>
+								</li>
 							</ul>
-							<div class="work__view" target="_blank">
-								<a href="#">
-									View Live
-								</a>
-								<a href="#" target="_blank">
-									View on Github
-								</a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image">
-							<img src="assets/madlib.png" alt="">
-						</div>
-						<div class="work__details">
-							<h4>Madlib Adventures <i class="fa fa-gamepad" aria-hidden="true"></i></h4>
-							<h3>Javascript Game Application</h3>
-							<div class="keyline"></div>
-							<p>
-								A Choose-Your-Own-Adventure game with a madlib spin! Pair programmed with
-								<a href="#" target="_blank">Sonny Zhang</a>.
-							</p>
-							<ul class="work__tools">
-								<li>Javascript</li>
-								<li>JQuery</li>
-								<li>CSS3</li>
-								<li>Sass</li>
-								<li>HTML5</li>
-								<li>Collaborative</li>
-								<li>Pair Programming</li>
+						</li>
+						<li>
+							<ul class="skill__group">
+								<li class="skill__item">
+									<img src="assets/javascript-original.svg" alt="icon for Javascript">
+									<p>Javascript</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/es6.svg" alt="icon for ES6">
+									<p>ES6</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/jquery-original.svg" alt="icon for JQuery">
+									<p>JQuery</p>
+								</li>
 							</ul>
-							<div class="work__view">
-								<a href="#" target="_blank">
-									View Live
-								</a>
-								<a href="#" target="_blank">
-									View on Github
-								</a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image">
-							<img src="assets/city-bikes.png" alt="">
-						</div>
-						<div class="work__details">
-							<h4>CityBikes Toronto <i class="fa fa-bicycle" aria-hidden="true"></i></h4>
-							<h3>Client API Application</h3>
-							<div class="keyline"></div>
-							<p>
-								Using CityBikes and Google Maps API, Find the nearest BikeShare stations at your departure point and desired destination! It even calculates the price of your trip for you. Project built in conjuction with
-								<a href="#" target="_blank">Amy Tschupruk</a> and
-								<a href="#" target="_blank">Matthew Crossland</a>.
-							</p>
-							<ul class="work__tools">
-								<li>APIs</li>
-								<li>Javascript</li>
-								<li>ES6</li>
-								<li>JQuery</li>
-								<li>Git Workflow</li>
-								<li>Gulp</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-								<li>Collaborative</li>
+						</li>
+						<li>
+							<ul class="skill__group">
+								<li class="skill__item">
+									<img src="assets/react-original.svg" alt="icon for React">
+									<p>React</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/firebaseIcon.svg" alt="icon for Firebase">
+									<p>Firebase</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/git-plain.svg" alt="icon for Git">
+									<p>Git</p>
+								</li>
 							</ul>
-							<div class="work__view">
-								<a href="#">
-									View Live
-								</a>
-								<a href="#">
-									View on Github
-								</a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-					<div class="work">
-						<div class="work__image">
-							<img src="assets/definity.png" alt="">
-						</div>
-						<div class="work__details">
-							<h4>Definity <i class="fa fa-eye" aria-hidden="true"></i></h4>
-							<h3>PSD Conversion</h3>
-							<div class="keyline"></div>
-							<p>Created a pixel perfect translation of a PSD design into a fully responsive site.</p>
-							<ul class="work__tools">
-								<li>Responsive Design</li>
-								<li>Sass</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-								<li>Javascript</li>
-								<li>JQuery</li>
+						</li>
+						<li>
+							<ul class="skill__group">
+								<li class="skill__item">
+									<img src="assets/github-original.svg" alt="icon for Github">
+									<p>GitHub</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/gulp-plain.svg" alt="icon for Gulp">
+									<p>Gulp</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/babel-original.svg" alt="icon for Babel">
+									<p>Babel</p>
+								</li>
 							</ul>
-							<div class="work__view">
-								<a href="#" target="_blank">
-									View Live
-								</a>
-								<a href="#" target="_blank">
-									View on Github
-								</a>
-							</div>
-						</div> <!-- end work__details -->
-					</div> <!-- end work -->
-				</div> <!-- end work-container -->
-			</div> <!-- end wrapper -->
-		</section> <!-- end work-section -->
-		<section class="skills-section" id="skills">
-			<div class="skills-wrapper">
-				<div class="section-title">
-					<h2>Skills &amp; Tools</h2>
-				</div>
-				<ul class="skills">
-					<li>
-						<ul class="skill__group">
-							<li class="skill__item">
-								<img src="assets/html5-plain.svg" alt="icon for HTML5">
-								<p>HTML5</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/css3-plain.svg" alt="icon for CSS3">
-								<p>CSS3</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/sass-original.svg" alt="icon for Sass">
-								<p>Sass</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="skill__group">
-							<li class="skill__item">
-								<img src="assets/javascript-original.svg" alt="icon for Javascript">
-								<p>Javascript</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/es6.svg" alt="icon for ES6">
-								<p>ES6</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/jquery-original.svg" alt="icon for JQuery">
-								<p>JQuery</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="skill__group">
-							<li class="skill__item">
-								<img src="assets/react-original.svg" alt="icon for React">
-								<p>React</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/firebaseIcon.svg" alt="icon for Firebase">
-								<p>Firebase</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/git-plain.svg" alt="icon for Git">
-								<p>Git</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="skill__group">
-							<li class="skill__item">
-								<img src="assets/github-original.svg" alt="icon for Github">
-								<p>GitHub</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/gulp-plain.svg" alt="icon for Gulp">
-								<p>Gulp</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/babel-original.svg" alt="icon for Babel">
-								<p>Babel</p>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="skill__group">
-							<li class="skill__item">
-								<img src="assets/sublimeIcon.svg" alt="icon for Sublime Text">
-								<p>Sublime</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/photoshop-plain.svg" alt="icon for Adobe Illustrator">
-								<p>Photoshop</p>
-							</li>
-							<li class="skill__item">
-								<img src="assets/illustrator-plain.svg" alt="icon for Adobe Illustrator">
-								<p>Illustrator</p>
-							</li>
-						</ul>
-					</li>
+						</li>
+						<li>
+							<ul class="skill__group">
+								<li class="skill__item">
+									<img src="assets/sublimeIcon.svg" alt="icon for Sublime Text">
+									<p>Sublime</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/photoshop-plain.svg" alt="icon for Adobe Illustrator">
+									<p>Photoshop</p>
+								</li>
+								<li class="skill__item">
+									<img src="assets/illustrator-plain.svg" alt="icon for Adobe Illustrator">
+									<p>Illustrator</p>
+								</li>
+							</ul>
+						</li>
 
 
-				</ul> <!-- end skills -->
-			</div> <!-- end skills-wrapper -->
-		</section>
-		
-		<section class="contact-section" id="contact">
-			<div class="wrapper">
-				<div class="section-title">
-					<h2>Contact</h2>
-				</div>
-				<div class="contact-container">
-					<ul class="contact__info">
-						<li>
-							<a href="mailto:hello@angelalagao.com">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-								<span class="contact__text">hello@angelalagao.com</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/angelalagao">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="contact__text">Twitter</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://medium.com/@angelalagao">
-								<i class="fa fa-medium" aria-hidden="true"></i>
-								<span class="contact__text">Medium</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/angelalagao">
-								<i class="fa fa-github" aria-hidden="true"></i>
-								<span class="contact__text">Github</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/angel-alagao-7786a4a4/">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-								 <span class="contact__text">LinkedIn</span>
-							</a>
-						</li>
-					</ul>
-					<form action="" class="contact__form">
-						<label for="name">Name</label>
-						<input type="text" name="name">
-						<label for="name">Email</label>
-						<input type="email" name="email">
-						<label for="message">Message</label>
-						<textarea name="message" id="" cols="30" rows="10"></textarea>
-						<input type="submit" value="Send Message">
-					</form>
-				</div>
-			</div> <!-- end wrapper -->
-		</section>
-		</main>
+					</ul> <!-- end skills -->
+				</div> <!-- end skills-wrapper -->
+			</section>
+			
+			<section class="contact-section" id="contact">
+				<div class="wrapper">
+					<div class="section-title">
+						<h2>Contact</h2>
+					</div>
+					<div class="contact-container">
+						<ul class="contact__info">
+							<li>
+								<a href="mailto:hello@angelalagao.com">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<span class="contact__text">hello@angelalagao.com</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/angelalagao">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<span class="contact__text">Twitter</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://medium.com/@angelalagao">
+									<i class="fa fa-medium" aria-hidden="true"></i>
+									<span class="contact__text">Medium</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/angelalagao">
+									<i class="fa fa-github" aria-hidden="true"></i>
+									<span class="contact__text">Github</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/angel-alagao-7786a4a4/">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+									 <span class="contact__text">LinkedIn</span>
+								</a>
+							</li>
+						</ul>
+						<form action="http://www.focuspocus.io/magic/5c03195e1221bce0abcef549f55a1e32" method="POST" class="contact__form">
+							<label for="name">Name</label>
+							<input type="text" name="name">
+							<label for="name">Email</label>
+							<input type="email" name="email">
+							<label for="message">Message</label>
+							<textarea name="message" id="" cols="30" rows="10"></textarea>
+							<input type="submit" value="Send Message">
+						</form>
+					</div>
+				</div> <!-- end wrapper -->
+			</section>
+		</main> <!-- end main -->
 		<footer>
 			<p>&copy; <span class="year"></span> Angel Alagao</p>
+			<p>Photo credit: <a href="#">Alex Clarke</a> &amp; Logo design by <a href="#">Tricia Abrenica</a></p>
 		</footer>
 	</div> <!-- end outer-wrapper -->
 	<script src="https://use.fontawesome.com/863f28bd20.js"></script>
