@@ -49,8 +49,10 @@ header {
 }
 
 .nav-logo {
-	// visibility: hidden;
-	// opacity: 0;
+	width: 40px;
+	img {
+		max-width: 100%;
+	}
 }
 
 .nav-links-wrap {

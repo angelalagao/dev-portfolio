@@ -32,10 +32,10 @@
 .contact__info {
 	li {
 		padding: 20px 0;
-		i {
-			font-size: 2rem;
-			padding-bottom: 5px;
-		}
+	}
+	i {
+		font-size: 3rem;
+		padding-bottom: 5px;
 	}
 	a {
 		display: flex;
@@ -47,4 +47,34 @@
 			color: $greyColor;
 		}
 	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.contact-container {
+		flex-direction: column-reverse;
+		width: 75%;
+		padding: 0;
+	}
+	.contact__info {
+		display: flex;
+		justify-content: space-around;
+	}
+	.contact__form {
+		width: 100%;
+		padding: 0;
+	}
+	.contact__text {
+		display: none;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
 }
