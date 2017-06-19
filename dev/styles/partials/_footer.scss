@@ -1,6 +1,10 @@
 footer {
 	text-align: center;
 	a {
-		color: $greenColor;
+		color: $greyColor;
+		transition: all 0.5s;
+		&:hover {
+			border-bottom: 1px solid $greenColor;
+		}
 	}
 }

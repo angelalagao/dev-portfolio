@@ -17,8 +17,9 @@
 		border: none;
 		border-bottom: 1px solid $greenColor;
 		margin: 10px 0;
-		outline-color: $shadowColor;
+		outline: transparent;
 		resize: none;
+		transition: all 0.5s;
 		&:focus {
 			border-bottom: 3px solid $greenColor;
 		}

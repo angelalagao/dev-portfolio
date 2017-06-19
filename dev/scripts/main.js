@@ -15,8 +15,9 @@ portfolioApp.events = () => {
 
 // Click menu function
 portfolioApp.burgerClick = () => {
-	$('#burger').on('click tap', () => {
+	$('#burger').on('click tap', function() {
 		$('.nav-links').toggleClass('show-nav');
+		$(this).toggleClass('rotato');
 	});
 }
 
@@ -44,7 +45,7 @@ portfolioApp.smoothScroll = () => {
 // Scroll nav
 portfolioApp.scrollNav = () => {
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > 500) {
+		if ($(window).scrollTop() > 550) {
 			$('.nav-wrapper').addClass('nav__fixed');
 		} else {
 			$('.nav-wrapper').removeClass('nav__fixed');
