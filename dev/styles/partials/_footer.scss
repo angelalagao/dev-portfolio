@@ -8,3 +8,11 @@ footer {
 		}
 	}
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	footer {
+		font-size: 1.2rem;
+	}
+	
+}

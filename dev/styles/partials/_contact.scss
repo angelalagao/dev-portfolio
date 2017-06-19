@@ -18,10 +18,10 @@
 		background: transparent;
 		border: none;
 		border-bottom: 2px solid $greenColor;
-		margin: 10px 0;
+		margin: 15px 0;
 		outline: transparent;
 		resize: none;
-		transition: all 0.5s;
+		transition: all 0.2s;
 		&:focus {
 			border-bottom: 4px solid $greenColor;
 		}
