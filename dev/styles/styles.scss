@@ -77,15 +77,14 @@ section {
 
 .wrapper {
 	width: 93%;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	margin: 0 auto;
+	padding: 60px 95px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .section-title {
 	width: 30%;
-	text-align: center;
 }
 
 
@@ -97,12 +96,22 @@ section {
 		align-items: center;
 		width: 100%;
 	}
+	.section-title {
+		width: 100%;
+		h2 {
+			text-align: center;
+		}
+	}
+
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 	h1 {
 		font-size: calc(6.2rem + (9 - 6.2) * ((100vw - 481px) / (768 - 481)));
+	}
+	.wrapper {
+		padding: 60px;
 	}
 }
 
@@ -117,5 +126,8 @@ section {
 	}
 	h2 {
 		letter-spacing: 0.6px;
+	}
+	.wrapper {
+		padding: 20px 10px;
 	}
 }

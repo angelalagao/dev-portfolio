@@ -35,7 +35,7 @@ header {
 	margin: auto;
 	.titles {
 		@include headerText(6.1rem, rgba($greyColor, 0.8), 700);
-		text-transform: lowercase;
+		// text-transform: lowercase;
 	}
 }
 

@@ -5,7 +5,9 @@
 .about-content {
 	width: 70%;
 	line-height: 26px;
-	padding-left: 95px;
+	i {
+		color: $greenColor;
+	}
 }
 
 .about-info {
@@ -53,5 +55,7 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+	.about-info {
+		width: 100%;
+	}
 }

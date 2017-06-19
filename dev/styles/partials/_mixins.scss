@@ -6,7 +6,7 @@
 
 @mixin buttonOrLink () {
 	padding: 10px;
-	border: 2px solid $greenColor;
+	border: 1px solid $greenColor;
 	border-radius: 2px;
 	transition: all 0.5s;
 	&:hover {

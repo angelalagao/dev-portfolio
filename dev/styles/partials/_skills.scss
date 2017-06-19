@@ -1,14 +1,12 @@
 .skills-wrapper {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	width: 100%;
-	padding-top: 60px;
-	padding-bottom: 60px;
 }
 
 .skills {
-	width: 60%;
+	width: 80%;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -33,16 +31,12 @@ svg {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 	.skills {
-		width: 70%;
+		width: 100%;
 	}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-	.skills {
-		width: 80%;
-	}
-
 }
 
 /* Landscape phones and down */
