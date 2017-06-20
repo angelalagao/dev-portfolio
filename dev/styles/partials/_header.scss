@@ -152,6 +152,11 @@ header {
 		position: relative;
 		z-index: 10;
 	}
+	.nav-burger {
+		button {
+			padding: 0;
+		}
+	}
 	.nav-links {
 		position: absolute;
 		top: 20px;
