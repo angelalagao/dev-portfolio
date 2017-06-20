@@ -89,6 +89,11 @@
 	width: 400px;
 	img {
 		max-width: 100%;
+		transition: all 0.5s;
+		&:hover {
+			transform: translateY(-8px);
+			cursor: pointer;
+		}
 	}
 }
 

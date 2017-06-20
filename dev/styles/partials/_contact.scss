@@ -1,30 +1,39 @@
 .contact-wrapper {
-	flex-direction: column;
+	// flex-direction: column;
 }
 
 .contact-container {
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
 
 .contact__form {
-	width: 70%;
+
+	width: 50%;
 	padding-top: 20px;
-	padding-left: 40px;
 	display: flex;
 	flex-direction: column;
+	h3 {
+		font-size: 2.4rem;
+		margin-bottom: 55px;
+	}
 	input, textarea {
 		background: transparent;
 		border: none;
-		border-bottom: 2px solid $greenColor;
-		margin: 15px 0;
+		border-bottom: 1px solid $greyColor;
+		padding: 15px 0;
+		margin-bottom: 35px;
 		outline: transparent;
 		resize: none;
 		transition: all 0.2s;
 		&:focus {
 			border-bottom: 4px solid $greenColor;
 		}
+	}
+	textarea {
+		height: 90px;
 	}
 	input[type="submit"] {
 		@include buttonOrLink();
@@ -38,30 +47,60 @@
 	}
 }
 
-.contact__info {
+.contact__social {
 	text-align: left;
-	li {
-		padding: 15px 0;
-	}
+	display: flex;
+	justify-content: space-between;
 	i {
 		font-size: 2.6rem;
 		margin-right: 5px;
-		padding-bottom: 5px;
 	}
 	a {
-		display: flex;
-		align-items: center;
 		color: $greenColor;
 		transition: all 0.5s;
 		&:hover {
 			color: $greyColor;
+			cursor: pointer;
 		}
 	}
 }
 
+.contact__information {
+	width: 40%;
+	padding-right: 50px;
+	.contact__point {
+		text-align: center;
+		margin: 60px 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		img {
+			margin-bottom: 20px;
+			transition: all 0.5s;
+			&:hover {
+				transform: translateY(-5px);
+			}
+		}
+	}
+}
+
+.mail {
+	padding: 10px 0;
+	color: $blackColor;
+	transition: all 0.5s;
+	&:hover {
+		cursor: pointer;
+		color: $greenColor;
+		border-bottom: 1px solid $greenColor;
+	}
+}
+
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-
+	.contact__information {
+		padding-right: 0;
+	}
 }
 
 /* Landscape phone to portrait tablet */
@@ -71,7 +110,7 @@
 		width: 80%;
 		padding: 0;
 	}
-	.contact__info {
+	.contact__social {
 		display: flex;
 		justify-content: space-around;
 		i {
@@ -82,8 +121,21 @@
 		width: 100%;
 		padding: 0;
 	}
-	.contact__text {
-		display: none;
+	.contact__information {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		.contact__point {
+			display: none;
+			margin: 0;
+			p, img {
+				display: none;
+			}
+			&:last-child {
+				width: 100%;
+				display: block;
+			}
+		}
 	}
 }
 
