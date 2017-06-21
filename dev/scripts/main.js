@@ -18,6 +18,17 @@ portfolioApp.burgerClick = () => {
 	$('#burger').on('click tap', function() {
 		$('.nav-links').toggleClass('show-nav');
 		$(this).toggleClass('rotato');
+		let navOpen = $('.nav-links').hasClass('show-nav');
+		if (navOpen) {
+			$('.burger-icon').toggleClass('hide')
+				.queue(function() {
+					$('.exit').toggleClass('hide show');
+					$(this).dequeue();
+				});
+		} else {
+			$('.exit').toggleClass('show hide');
+			$('.burger-icon').toggleClass('hide');
+		}
 	});
 }
 

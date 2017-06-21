@@ -69,6 +69,7 @@ header {
 .nav-links {
 	visibility: hidden;
 	opacity: 0;
+	padding-right: 30px;
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
@@ -77,11 +78,6 @@ header {
 	li {
 		padding: 10px;
 	}
-}
-
-.show-nav {
-	visibility: visible;
-	opacity: 1;
 }
 
 .scroll {
@@ -98,16 +94,40 @@ header {
 }
 
 .nav-burger {
+	position: relative;
 	button {
 		color: $greyColor;
 		font-size: 3rem;
 		border: none;
 		background: transparent;
-		transition: all 0.5s;
+		transition: all 0.3s;
 		&:hover {
 			color: $shadowColor;
 		}
 	}
+}
+
+.hide, .show {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.show-nav {
+	visibility: visible;
+	opacity: 1;
+}
+
+.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.hide {
+	visibility: hidden;
+	opacity: 0;
 }
 
 .rotato {
@@ -158,6 +178,7 @@ header {
 		}
 	}
 	.nav-links {
+		padding-right: 0;
 		position: absolute;
 		top: 20px;
 		left: 0;
