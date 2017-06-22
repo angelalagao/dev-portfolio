@@ -162,6 +162,10 @@ header {
 @media (max-width: 480px) {
 	header {
 		background-attachment: scroll;
+		min-height: 90vh;
+	}
+	.header-container {
+		min-height: 90vh;
 	}
 	.header-content {
 		text-align: center;
